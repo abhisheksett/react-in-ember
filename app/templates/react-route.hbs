@@ -1,0 +1,17 @@
+
+
+<h4>Please enter some text here: </h4>
+<input
+  type=text
+  value={{userInput}}
+  oninput={{action "textChanged"}}
+/>
+<div>You have entered this in React Text Box: <b>{{reactInput}}</b></div>
+
+<h3>React component is loaded here</h3> <hr/>
+{{react-component
+  reactComponent="reactSampleComponent"
+  val2="test"
+  userInput=userInput
+  reactValueChanged=(action "reactValueChanged")
+}}
